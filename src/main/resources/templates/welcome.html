@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Spring Boot Thymeleaf Hello World Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" th:href="@{/css/main.css}"
+	href="../../css/main.css" />
+</head>
+<body>
+	<div class="starter-template">
+		<h1>Spring Boot Web Thymeleaf Jasper Report Example</h1>
+		<h2>
+			<span th:text="${message}"></span>
+		</h2>
+		
+		<a href="/openStaticReport"><button>Open a Static Report</button></a><br/>
+		
+		
+	</div>
+	
+	<div class="starter-templat">
+		<form action="openDynamicReport">
+		<table>
+			<tr>
+				<td>Patient Id</td>
+				<td>:</td>
+				<td><input type="text" name="pid"/></td>
+			</tr>
+		</table>
+		<input type="submit" value="Open a Dynamic Report"/>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.3.final using JasperReports Library version 6.4.3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="test" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="febb4fef-363a-4ba0-94dd-1d15e58f78c9">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="mysqlAdapter"/>
+	<queryString language="SQL">
+		<![CDATA[select * from  chabed.student]]>
+	</queryString>
+	<field name="sid" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="sid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="age" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="age"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="gender"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="mobile" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="mobile"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="pic" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="pic"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="111" height="30" uuid="9cbeb044-d375-4bc7-a8a2-b0741dfc81ed">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8f8f0a65-e3b3-42cc-ad2e-362ad8452eef"/>
+				</reportElement>
+				<text><![CDATA[sid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="111" height="30" uuid="725d38eb-97de-404f-9221-77c1f86ded42">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1fd1050d-085f-41b5-b84e-16ba5e85da90"/>
+				</reportElement>
+				<text><![CDATA[name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="0" width="111" height="30" uuid="346f24c4-b40b-40a3-b93f-a72e412f039e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d87d9979-b9f8-49a7-9cc3-4a2d8479d2e0"/>
+				</reportElement>
+				<text><![CDATA[age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="0" width="111" height="30" uuid="af6db90d-f5de-45ed-9aa2-852d33c20aca">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a55716fb-bf05-4ff0-b629-cd5dfb62af9b"/>
+				</reportElement>
+				<text><![CDATA[gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="111" height="30" uuid="674190c4-7f9e-4837-954b-e8f4f38b4822">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6cc0d6cf-e76b-4dae-a36c-49d075eb57bf"/>
+				</reportElement>
+				<text><![CDATA[mobile]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="111" height="30" uuid="ee1b1094-c93d-444c-982a-e35550a45cc3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8f8f0a65-e3b3-42cc-ad2e-362ad8452eef"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{sid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="111" height="30" uuid="6651ec35-972c-4021-b4f9-d6dc98afaafb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1fd1050d-085f-41b5-b84e-16ba5e85da90"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="0" width="111" height="30" uuid="00e02819-e37f-4aeb-9f57-a2d4a1edd731">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d87d9979-b9f8-49a7-9cc3-4a2d8479d2e0"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="0" width="111" height="30" uuid="a145d244-b080-411d-9ade-fe9e12a2156b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a55716fb-bf05-4ff0-b629-cd5dfb62af9b"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="0" width="111" height="30" uuid="85e95b79-b6f7-4242-87a6-f15bbf7182b9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6cc0d6cf-e76b-4dae-a36c-49d075eb57bf"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{mobile}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
